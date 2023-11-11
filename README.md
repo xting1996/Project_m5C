@@ -57,7 +57,7 @@ rule trim:
         """
         
 ```
-`
+
 ##### step2. Assign merged reads to respective individual samples according to sample-barcoded sequence.
 ```
 fastq-multx -B barcode.txt -m 0 \
