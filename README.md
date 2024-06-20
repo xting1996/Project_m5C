@@ -7,7 +7,7 @@ m5C-TAC-seq is a bisulfite-free approach that combines TET-assisted m5C-to-f5C o
 ### What is m5C-TAC-tool ?
 The m5C-TAC-seq tool can accurately identify m5C sites from m5C-TAC-seq data generated from experiments.
 
-<img width="1000" alt="image" src="https://github.com/xting1996/Project_m5C/assets/34152806/1a754c02-f3a6-4a36-815b-80a7c24923a9">
+<img width="884" alt="image" src="https://github.com/xting1996/Project_m5C/assets/34152806/a37e847c-a553-4c16-a954-8e2f3124987e">
 
 
 ### Update log
