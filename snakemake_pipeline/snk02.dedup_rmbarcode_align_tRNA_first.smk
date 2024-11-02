@@ -12,16 +12,10 @@ SAMPLES=[
 ## 3.remove UMI
 ## 4.alignment
 ####--------------------------------------------------------
-#CUTADAPT="/lustre2/chengqiyi_pkuhpc/zhangxt/software/cutadapt/bin/cutadapt"
 TRIM_GALORE = "/path/to/trim_galore"
 SEQKIT = "/path/to/seqkit"
 SEQTK = "/path/to/seqtk"
 hisat3n = "/path/to/hisat-3n"
-
-
-##03.reference
-##比对到mouse p6 + spikein 
-
 
 mm10_tRNA = "/path/to/smRNA"
 
@@ -53,8 +47,6 @@ rule deRandom10N_clean:
                 "../04rmdup_rmUMI/{sample}.rmdup.rmUMI.R2.fq.gz",
         shell:
                 """
-                #{FASTX} -Q 33 -f 11 -i {input} -o {output}
-                #fastp -i {input} -o {output} -U --umi_loc=read1 --umi_len=4
                 fastp -i {input} -o {output} -f 10 -t 10 -l 20
                 """
                 
