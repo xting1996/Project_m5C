@@ -4,16 +4,8 @@
 ##5hmC & 5fC total RNA 分析
 ##------------Version1------------------------
 ##2022-05-11
-##seq in Hangzhou
-## add spike-in seq for quantitive
+
 ####--------------------------------------------------------
-
-#SAMPLES=[
-#"m5C_Spike_in_Ctrl",
-#"m5C_Spike_in_Label",
-#]
-
-
 SAMPLES=[
 "Ctrl_rep1",
 "Ctrl_rep2",
@@ -23,9 +15,8 @@ SAMPLES=[
 ## Main pipeline
 ## 1.remove adapter
 ## 2.remove dup
-## 3.remove R2 前10nt UMI
-## 4.进行align
-## 5.进行tRF的分析
+## 3.remove UMI
+## 4.alignment
 ####--------------------------------------------------------
 #CUTADAPT="/lustre2/chengqiyi_pkuhpc/zhangxt/software/cutadapt/bin/cutadapt"
 TRIM_GALORE = "/path/to/trim_galore"
