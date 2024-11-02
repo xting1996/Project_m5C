@@ -127,6 +127,7 @@ Different small RNA references are merged into `smallRNA.fa`
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz
 ## or human hg38 (more frequently now)
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+
 ## mouse,mm10
 
 wget https://hgdownload.soe.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz
