@@ -1,36 +1,12 @@
-
-##01.samples
-####--------------------------------------------------------
-##5hmC & 5fC total RNA 分析
-##------------Version1------------------------
-##2022-05-11
-##seq in Hangzhou
-## add spike-in seq for quantitive
-####--------------------------------------------------------
-
-#SAMPLES=[
-#"m5C_Spike_in_Ctrl",
-#"m5C_Spike_in_Label",
-#]
-
-
 SAMPLES=[
 "Ctrl_rep1",
 "Ctrl_rep2",
 "Label_rep1",
 "Label_rep2",
 ]
-## Main pipeline
-## 1.remove adapter
-## 2.remove dup
-## 3.remove R2 前10nt UMI
-## 4.进行align
-## 5.进行tRF的分析
-####--------------------------------------------------------
-#CUTADAPT="/lustre2/chengqiyi_pkuhpc/zhangxt/software/cutadapt/bin/cutadapt"
-hisat3n = "/path/to/hisat-3n"
-##03.reference
 
+####--------------------------------------------------------
+hisat3n = "/path/to/hisat-3n"
 genome_ref = "/path/to/genome"
 ####--------------------------------------------------------
 rule all:
@@ -39,10 +15,6 @@ rule all:
         expand("../07Align_genome/{sample}.hisat3n.genome.sam",sample=SAMPLES),
         expand("../07Align_genome/{sample}.hisat3n.genome.sort.bam",sample=SAMPLES),
         expand("../07Align_genome/{sample}.hisat3n.genome.sort.bam.bai",sample=SAMPLES),
-
-
-
-
 
                 
 ####----------------------Hisat2-3n------------------------------
