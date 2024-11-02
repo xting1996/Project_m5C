@@ -1,29 +1,3 @@
-# _*_ coding: UTF-8 _*_
-
-########################################################################
-# MENG Howard
-# 2021-07-08
-# ABE data 
-######################################################################## 
-# run on abyss
-# /home/menghaowei/menghw_HD/ABE_project/test.01.hisat3n_ABE_data
-
-
-# --------------------------------------------------------------->>>>>>>
-# software
-# --------------------------------------------------------------->>>>>>>
-
-
-# --------------------------------------------------------------->>>>>>>
-# index and files
-# --------------------------------------------------------------->>>>>>>
-HG38_FA = "/lustre2/chengqiyi_pkuhpc/zhangxt/genome/mouse/mm10_m5C_spikein/mm10.p6.spikein.fa"
-# rm INDEL info
-#ABE_SNP_MOCK_INFO = "/lustre2/chengqiyi_pkuhpc/zhangxt/ABE/20220510_direct_seq/script/293T_snp/293T-Mock-Input_A_or_T.mut.UnSort.pmat.AG_or_TC.out.bed"
-
-# --------------------------------------------------------------->>>>>>>
-# vars
-# --------------------------------------------------------------->>>>>>>
 SAMPLES=[
 "Ctrl_rep1",
 "Ctrl_rep2",
@@ -56,6 +30,7 @@ CHROM = [
 "chrM",]
 
 STRAND=['rev','fwd']
+HG38_FA = "/lustre2/chengqiyi_pkuhpc/zhangxt/genome/mouse/mm10_m5C_spikein/mm10.p6.spikein.fa"
 
 rule all:
     input:
