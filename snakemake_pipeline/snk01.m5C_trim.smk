@@ -1,27 +1,10 @@
 
-##01.samples
-####--------------------------------------------------------
-##5hmC & 5fC total RNA 分析
-##------------Version1------------------------
-##2022-05-11
-##seq in Hangzhou
-## add spike-in seq for quantitive
-####--------------------------------------------------------
-
-#SAMPLES=[
-#"m5C_Spike_in_Ctrl",
-#"m5C_Spike_in_Label",
-#]
-
-
 SAMPLES=[
 "Ctrl-rep1",
 "Ctrl-rep2",
 "Label-rep1",
 "Label-rep2",
 ]
-
-#CUTADAPT="/lustre2/chengqiyi_pkuhpc/zhangxt/software/cutadapt/bin/cutadapt"
 TRIM_GALORE = "/path/to/trim_galore"
 ####--------------------------------------------------------
 rule all:
