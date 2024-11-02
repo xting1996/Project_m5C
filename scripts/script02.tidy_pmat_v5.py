@@ -18,7 +18,7 @@ from scipy.stats import binom_test
 #pi = 1/1000
 #pi = 2/1000
 pi = 1/1000
-##这个pi要去计算
+
 ##
 def BinomimalTest(k,n,pi):
     try:
