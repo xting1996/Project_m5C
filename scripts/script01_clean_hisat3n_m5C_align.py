@@ -19,7 +19,7 @@
 import pysam
 import argparse
 
-##拆文件
+##command parameter 
 parser = argparse.ArgumentParser(description="According full length tRNA BAM(60-150nt), to remove non-templated base in short reads aligned BAM,generate a new fastq file")
 
 
